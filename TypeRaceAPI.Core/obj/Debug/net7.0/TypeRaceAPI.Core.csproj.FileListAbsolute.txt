@@ -1,0 +1,14 @@
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\bin\Debug\net7.0\TypeRaceAPI.Core.deps.json
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\bin\Debug\net7.0\TypeRaceAPI.Core.runtimeconfig.json
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\bin\Debug\net7.0\TypeRaceAPI.Core.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\bin\Debug\net7.0\TypeRaceAPI.Core.pdb
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.csproj.AssemblyReference.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.AssemblyInfoInputs.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.AssemblyInfo.cs
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.csproj.CoreCompileInputs.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\refint\TypeRaceAPI.Core.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.pdb
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\TypeRaceAPI.Core.genruntimeconfig.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Core\obj\Debug\net7.0\ref\TypeRaceAPI.Core.dll
