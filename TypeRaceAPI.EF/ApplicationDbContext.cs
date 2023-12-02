@@ -26,6 +26,8 @@ namespace TypeRaceAPI.EF
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<Tracker>().HasOne(t => t.progress).WithMany(p => p.Trackers).HasForeignKey(p => p.progressId);
+            builder.Entity<Tracker>().HasOne(t => t.Practice).WithMany(p => p.trackers);
         }
         public DbSet<Progress> progresses { get; set; }
         public DbSet<Tracker> trackers { get; set; }

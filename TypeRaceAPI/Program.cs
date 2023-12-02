@@ -4,6 +4,8 @@ using TypeRaceAPI.EF;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Identity;
+using TypeRaceAPI.Core.Interfaces;
+using TypeRaceAPI.EF.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,8 +22,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(
         ).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

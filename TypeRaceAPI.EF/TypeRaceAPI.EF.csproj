@@ -24,8 +24,4 @@
     <ProjectReference Include="..\TypeRaceAPI.Core\TypeRaceAPI.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

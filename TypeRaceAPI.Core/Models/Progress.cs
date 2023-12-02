@@ -11,6 +11,7 @@ namespace TypeRaceAPI.Core.Models
         public int Id { get; set; }
         public int speedRate { get; set; } = 0;
         public int Level { get; set; } = 1;
-        public int UserId { get; set; }
+        public required string UserId { get; set; }
+        public List<Tracker>? Trackers { get; set; }
     }
 }

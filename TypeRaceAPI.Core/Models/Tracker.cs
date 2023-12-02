@@ -11,8 +11,9 @@ namespace TypeRaceAPI.Core.Models
     {
         public int Id { get; set; }
         [Required]
-        public Progress progressId { get; set; }
-        public int Level { get; set; }
+        public required Progress progress { get; set; }
+        public int progressId { get; set; }
+        public required Practice Practice { get; set; }
         public int Score { get; set; }
     }
 }

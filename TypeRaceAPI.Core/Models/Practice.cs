@@ -14,7 +14,9 @@ namespace TypeRaceAPI.Core.Models
         public string Sentence { get; set; }
         [Required]
         public int Level { get; set; }
+        public bool? Premium { get; set; } = false;
         [Required]
-        public bool Premium { get; set; } = false;
+        public int PassScore { get; set; }
+        public List<Tracker>? trackers { get; set; }
     }
 }
