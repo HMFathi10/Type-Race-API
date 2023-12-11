@@ -89,3 +89,9 @@ D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0
 D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\TypeRaceAPI.Service.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI\bin\Debug\net7.0\TypeRaceAPI.Service.pdb

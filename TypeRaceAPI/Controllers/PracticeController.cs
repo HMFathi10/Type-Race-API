@@ -5,6 +5,7 @@ using System.Linq;
 using TypeRaceAPI.Core;
 using TypeRaceAPI.Core.Interfaces;
 using TypeRaceAPI.Core.Models;
+using TypeRaceAPI.Service.IServices;
 
 namespace TypeRaceAPI.Controllers
 {
@@ -13,39 +14,26 @@ namespace TypeRaceAPI.Controllers
     [ApiController]
     public class PracticeController : ControllerBase
     {
-        private readonly IUnitOfWork unitOfWork;
-        public PracticeController(IUnitOfWork unitOfWork) 
+        //private readonly IUnitOfWork unitOfWork;
+        private readonly IUnitOfService unitOfService;
+        public PracticeController(IUnitOfService unitOfService) 
         {
-            this.unitOfWork = unitOfWork;
+           this.unitOfService = unitOfService;
         }
         [HttpGet]
-        public async Task<IActionResult> getAllByUser(string userId)
+        public IActionResult getAllByUser(string userId)
         {
-            var practices = unitOfWork.Practices.GetAll();
-            List<PracticeViewModel> practicesViewModel = new List<PracticeViewModel>()/*Enumerable.Empty<PracticeViewModel>()*/;
+            var practices = unitOfService.practiceService.GetPractices();
+            List<PracticeViewModel> practicesViewModel = new List<PracticeViewModel>();
             foreach (var practice in practices)
             {
-                var prog = await unitOfWork.Progresses.FindAsync(t => t.Id == 1);
-                var tracker = await unitOfWork.Trackers.FindAsync(t => t.progress.UserId == userId && t.Practice == practice);
-                PracticeViewModel temp = new PracticeViewModel
-                {
-                    Id = practice.Id,
-                    level = practice.Level,
-                    Sentence = practice.Sentence,
-                    Premium = false,
-                    ProgressId = null,
-                    Score = 0,
-                    TrackerId = null
-                };
-                if (tracker != null)
-                {
-                    temp.ProgressId = tracker.progress.Id;
-                    temp.Score = tracker.Score;
-                    temp.TrackerId = tracker.Id;
-                }
+                var prog = unitOfService.progressService.GetProgress(1);
+                var tracker = unitOfService.trackerService.GetTrackers(t => t.progress.UserId == userId && t.practice == practice).FirstOrDefault();
+                PracticeViewModel temp = new PracticeViewModel(practice.Id, practice.Sentence, practice.Level, false, tracker?.Id,
+                                                                tracker != null ? tracker.Score : 0, tracker?.progressId);
                 practicesViewModel.Add(temp);
             }
-            return Ok(new { practicesViewModel, count = practicesViewModel?.Count() });
+            return Ok(new { practices = practicesViewModel, count = practicesViewModel?.Count() });
         }
     }
 }

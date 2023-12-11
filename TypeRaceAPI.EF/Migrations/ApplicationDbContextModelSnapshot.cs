@@ -243,7 +243,7 @@ namespace TypeRaceAPI.EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("practices");
+                    b.ToTable("Practice");
                 });
 
             modelBuilder.Entity("TypeRaceAPI.Core.Models.Progress", b =>
@@ -266,7 +266,7 @@ namespace TypeRaceAPI.EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("progresses");
+                    b.ToTable("Progress");
                 });
 
             modelBuilder.Entity("TypeRaceAPI.Core.Models.Tracker", b =>
@@ -277,10 +277,10 @@ namespace TypeRaceAPI.EF.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("PracticeId")
+                    b.Property<int>("Score")
                         .HasColumnType("int");
 
-                    b.Property<int>("Score")
+                    b.Property<int>("practiceId")
                         .HasColumnType("int");
 
                     b.Property<int>("progressId")
@@ -288,11 +288,11 @@ namespace TypeRaceAPI.EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PracticeId");
+                    b.HasIndex("practiceId");
 
                     b.HasIndex("progressId");
 
-                    b.ToTable("trackers");
+                    b.ToTable("Tracker");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -348,19 +348,19 @@ namespace TypeRaceAPI.EF.Migrations
 
             modelBuilder.Entity("TypeRaceAPI.Core.Models.Tracker", b =>
                 {
-                    b.HasOne("TypeRaceAPI.Core.Models.Practice", "Practice")
+                    b.HasOne("TypeRaceAPI.Core.Models.Practice", "practice")
                         .WithMany("trackers")
-                        .HasForeignKey("PracticeId")
+                        .HasForeignKey("practiceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("TypeRaceAPI.Core.Models.Progress", "progress")
-                        .WithMany("Trackers")
+                        .WithMany("trackers")
                         .HasForeignKey("progressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Practice");
+                    b.Navigation("practice");
 
                     b.Navigation("progress");
                 });
@@ -372,7 +372,7 @@ namespace TypeRaceAPI.EF.Migrations
 
             modelBuilder.Entity("TypeRaceAPI.Core.Models.Progress", b =>
                 {
-                    b.Navigation("Trackers");
+                    b.Navigation("trackers");
                 });
 #pragma warning restore 612, 618
         }

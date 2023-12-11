@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeRaceAPI", "TypeRaceAPI\TypeRaceAPI.csproj", "{8F3B173A-F801-43FD-8CDC-21DC554D0EEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeRaceAPI", "TypeRaceAPI\TypeRaceAPI.csproj", "{8F3B173A-F801-43FD-8CDC-21DC554D0EEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeRaceAPI.Core", "TypeRaceAPI.Core\TypeRaceAPI.Core.csproj", "{B91A2C13-9A55-476C-A2E1-7393569F4C19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeRaceAPI.Core", "TypeRaceAPI.Core\TypeRaceAPI.Core.csproj", "{B91A2C13-9A55-476C-A2E1-7393569F4C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeRaceAPI.EF", "TypeRaceAPI.EF\TypeRaceAPI.EF.csproj", "{77F80D70-1EB8-4892-8DE8-340B85CE190D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeRaceAPI.EF", "TypeRaceAPI.EF\TypeRaceAPI.EF.csproj", "{77F80D70-1EB8-4892-8DE8-340B85CE190D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeRaceAPI.Service", "TypeRaceAPI.Service\TypeRaceAPI.Service.csproj", "{455B7098-CF48-4BF3-82B4-3DC480F96A02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{77F80D70-1EB8-4892-8DE8-340B85CE190D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77F80D70-1EB8-4892-8DE8-340B85CE190D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77F80D70-1EB8-4892-8DE8-340B85CE190D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455B7098-CF48-4BF3-82B4-3DC480F96A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455B7098-CF48-4BF3-82B4-3DC480F96A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455B7098-CF48-4BF3-82B4-3DC480F96A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455B7098-CF48-4BF3-82B4-3DC480F96A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

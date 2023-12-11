@@ -13,28 +13,30 @@ namespace TypeRaceAPI.EF.Repositories
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         private readonly ApplicationDbContext _context;
+        private DbSet<T> _dbSet;
         public BaseRepository(ApplicationDbContext context)
         {
             _context = context;
+            _dbSet = _context.Set<T>();
         }
 
         public T? Add(T entity)
         {
-            _context.Set<T>().Add(entity);
+            _dbSet.Add(entity);
             _context.SaveChanges();
             return entity;
         }
 
         public IEnumerable<T?> AddRange(IEnumerable<T> entities)
         {
-            _context.Set<T>().AddRange(entities);
+            _dbSet.AddRange(entities);
             _context.SaveChanges();
             return entities;
         }
 
         public IEnumerable<T?> FindAll(Expression<Func<T, bool>> predicate, string[]? includes = null)
         {
-            IQueryable<T> query = _context.Set<T>();
+            IQueryable<T> query = _dbSet;
             if (includes != null)
             {
                 foreach (var include in includes)
@@ -48,7 +50,7 @@ namespace TypeRaceAPI.EF.Repositories
         public IEnumerable<T?> FindAll(Expression<Func<T, bool>> predicate,
             int? skip = null, int? take = null, Expression<Func<T, object>>? orderBy = null, string orderByDirection = OrderBy.Ascending)
         {
-            IQueryable<T> query = _context.Set<T>().Where(predicate);
+            IQueryable<T> query = _dbSet.Where(predicate);
             if (skip.HasValue)
             {
                 query = query.Skip(skip.Value);
@@ -69,7 +71,7 @@ namespace TypeRaceAPI.EF.Repositories
 
         public async Task<T?> FindAsync(Expression<Func<T, bool>> predicate, string[]? includes = null)
         {
-            IQueryable<T> query = _context.Set<T>();
+            IQueryable<T> query = _dbSet;
             if (includes != null)
             {
                 foreach (var include in includes)
@@ -82,7 +84,7 @@ namespace TypeRaceAPI.EF.Repositories
 
         public T? Get(int id)
         {
-            return _context.Set<T>().Find(id) as T;
+            return _dbSet.Find(id) as T;
         }
 
         //public T? Get(Expression<Func<T, bool>> predicate)
@@ -93,7 +95,8 @@ namespace TypeRaceAPI.EF.Repositories
 
         public IEnumerable<T> GetAll()
         {
-            return _context.Set<T>().ToList();
+            return _dbSet.ToList();
         }
+
     }
 }

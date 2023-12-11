@@ -1,0 +1,17 @@
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.Service.deps.json
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.Service.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.Service.pdb
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.Core.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.EF.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.Core.pdb
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\bin\Debug\net7.0\TypeRaceAPI.EF.pdb
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.csproj.AssemblyReference.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.AssemblyInfoInputs.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.AssemblyInfo.cs
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.csproj.CoreCompileInputs.cache
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.csproj.CopyComplete
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\refint\TypeRaceAPI.Service.dll
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\TypeRaceAPI.Service.pdb
+D:\Algoriza Intern\ASP.Net Core Web API\TypeRaceAPI\TypeRaceAPI.Service\obj\Debug\net7.0\ref\TypeRaceAPI.Service.dll

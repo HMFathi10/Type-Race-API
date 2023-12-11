@@ -6,6 +6,8 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using TypeRaceAPI.Core.Interfaces;
 using TypeRaceAPI.EF.Repositories;
+using TypeRaceAPI.Service.IServices;
+using TypeRaceAPI.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,8 +24,16 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(
         ).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
 // Add services to the container.
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddTransient<IUnitOfService, UnitOfService>();
+builder.Services.AddTransient<IPracticeService, PracticeService>();
+builder.Services.AddTransient<IProgressService, ProgressService>();
+builder.Services.AddTransient<ITrackerService, TrackerService>();
+builder.Services.AddMemoryCache();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
